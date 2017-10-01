@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body{
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: black;
+}
+.mat-dialog-container{
+  background: #1d0033;
+  color: white;
+  padding: 0 0 auto 0;
+
+  dialog{
+    position: static;
+    display: table-row;
+    background: none;
+    border: none;
+  }
+}
+.mat-paginator{
+  width:100%;
+  background: #D3D3D3;
+}

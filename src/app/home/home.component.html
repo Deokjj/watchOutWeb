@@ -1,0 +1,36 @@
+<section class="titleBox">
+
+  <div class="logoNTitle">
+    <div class="logo">
+    </div>
+    <div class="title">
+      <h1>Citizen Journalism Against Police Brutality</h1>
+      <p>Be aware. Police the police.</p>
+    </div>
+
+  </div>
+
+  <i class="material-icons">arrow_downward</i>
+
+</section>
+
+<section>
+  <div class="previewBox">
+    <div *ngFor="let data of dummyData" class="videoItem"
+    [ngStyle]="{'background-image': 'url(' + data.thumbnailUrl + ')'}"
+    (click)="openDialog(data)">
+    </div>
+    <md-paginator [length]="100"
+                  [pageSize]="9"
+                  [pageSizeOptions]="[3, 6, 9, 12]">
+    </md-paginator>
+  </div>
+</section>
+
+<section class="information">
+  <p>Learn about your rights when dealing with police encounters: </p>
+  <!-- <button md-raised-button>Basic</button>
+  <button md-raised-button color="primary">Primary</button>
+  <button md-raised-button color="warn">Warn</button> -->
+  <button md-raised-button color="accent">information</button>
+</section>

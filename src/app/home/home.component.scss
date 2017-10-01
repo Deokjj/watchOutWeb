@@ -1,0 +1,121 @@
+.titleBox{
+  width: 100vw;
+  height: 100vh;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // text-align: center;
+
+.logoNTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  transform: translateY(-5vh);
+}
+
+  i{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translate(-50%);
+    animation-duration: 1.5s;
+    animation-name: promptDown;
+    animation-iteration-count: 2;
+  }
+}
+
+@keyframes promptDown {
+  75%{
+    bottom: 5vh;
+  }
+  100%{
+    bottom: 10vh;
+  }
+}
+
+.logo{
+  flex-basis: 30%;
+  flex-grow: 1;
+  height: 40vh;
+  filter: invert(1);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/COPWATCH_logo.svg/1200px-COPWATCH_logo.svg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10%;
+  position: relative;
+  align-self: center;
+}
+
+.title{
+  flex-basis: 70%;
+  flex-grow: 2.5;
+  align-self: center;
+  color: white;
+  padding: 0 10%;
+  h1{
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #e6e6e6;
+  }
+  p{
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+}
+
+.previewBox{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.videoItem{
+  flex-basis: 33.33%;
+  // flex-grow: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.videoItem:before{
+  content: "";
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 55%;
+}
+
+.videoItem:hover{
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.information{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  p{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: white;
+  }
+  button{
+    padding: 10px 10px;
+    margin: 5vh 0;
+  }
+}
